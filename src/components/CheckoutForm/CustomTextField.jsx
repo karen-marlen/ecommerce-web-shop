@@ -2,7 +2,7 @@ import React from 'react';
 import { useFormContext, Controller } from 'react-hook-form';
 import { TextField, Grid } from '@material-ui/core';
 
-function FormInput({ name, label, required }) {
+function CustomTextField({ name, label, required }) {
   const { control } = useFormContext();
   const isError = false;
 
@@ -21,4 +21,4 @@ function FormInput({ name, label, required }) {
   );
 }
 
-export default FormInput;
+export default CustomTextField;

@@ -5,7 +5,7 @@ module.exports = {
     },
     extends: [
       'plugin:react/recommended',
-      
+      'airbnb',
     ],
     globals: {
       Atomics: 'readonly',
@@ -22,6 +22,7 @@ module.exports = {
     plugins: [
       'react',
     ],
+    
     rules: {
       'import/extensions': 0,
       'react/prop-types': 0,
@@ -33,11 +34,9 @@ module.exports = {
         250,
       ],
       'no-multiple-empty-lines': [
-        'error',
-        {
-          max: 1,
-          maxEOF: 1,
-        },
+        
+            2, {"max": 99999, "maxEOF": 0}
+        
       ],
       'camelcase': 0,
       'no-underscore-dangle': [
@@ -79,8 +78,11 @@ module.exports = {
             'invalidHref',
             'preferButton',
           ],
+          
         },
       ],
     },
-  };
+    
+};
+
   
